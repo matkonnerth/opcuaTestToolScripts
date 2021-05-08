@@ -1,21 +1,10 @@
-def intent(x)
-{
-  for(auto i=0; i < x; ++i)
-  {
-    puts(" ");
-  }
-}
-
-def browseRecursive(id, intention) 
+def browseRecursive(id) 
 {
   auto results = browse(id);
-  intent(intention)
-   for(r : results)
-   {
-      print(r.Name().Name())
-      auto nextIntent = intention+1
-      browseRecursive(r.Id(), nextIntent)
-   }
+  for(r : results)
+  {
+    browseRecursive(r.Id())
+  }
 }
 
 browseRecursive(NodeId(0,85), 0)
