@@ -7,5 +7,5 @@ def browseRecursive(id)
   }
 }
 
-browseRecursive(NodeId(0,85), 0)
+browseRecursive(NodeId(0,85))
 
