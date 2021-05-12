@@ -1,0 +1,20 @@
+def browseRecursive(id) 
+{
+  auto results = browse(id);
+  for(r : results)
+  {
+    if(isVariable(r))
+    {
+        try
+        {
+            auto val = read(r.Id());
+        }
+        catch
+        {
+        }
+    }
+    browseRecursive(r.Id());    
+  }
+}
+
+browseRecursive(NodeId(0,85))
