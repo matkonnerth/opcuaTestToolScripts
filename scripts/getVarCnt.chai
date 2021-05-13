@@ -1,16 +1,9 @@
-global cnt = 0;
-
-def browseRecursive(id) 
-{
-  auto results = browse(id);
-   for(r : results)
-   {
-      browseRecursive(r.Id())
-      cnt = cnt+1;
-
-   }
+var cnt = 0;
+var increment = fun[cnt](x) 
+{ 
+  cnt = cnt+1;
 }
 
-browseRecursive(NodeId(0,85))
+foreachNode(NodeId(0,85), increment)
 print(cnt);
 

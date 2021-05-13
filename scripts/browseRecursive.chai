@@ -1,11 +1,32 @@
-def browseRecursive(id) 
+def browseRecursive(NodeId id, fnc) 
 {
   auto results = browse(id);
   for(r : results)
   {
-    browseRecursive(r.Id())
+    fnc(r);
+    browseRecursive(r.Id(), fnc);
   }
 }
 
-browseRecursive(NodeId(0,85))
+def foreachNode(id, fnc)
+{
+  browseRecursive(id, fnc)
+}
+
+var printFun = fun(x) 
+{ 
+  print(x.Name().Name());
+}
+
+var readFun = fun(x)
+{
+  if(isVariable(x))
+  {
+    var val = read(x.Id());
+  }
+}
+
+foreachNode(NodeId(0,85), printFun);
+foreachNode(NodeId(0,87), readFun);
+
 
