@@ -1,1 +1,9 @@
-call(NodeId(0,85), NodeId(1,62541), String("abc"));
+var inputs = VariantList();
+inputs.push_back(Variant("mk"));
+var outputs = call(NodeId(0,85), NodeId(1,62541), inputs);
+print("outputsSize: " + to_string(outputs.size()))
+// variant comparison
+if(outputs[0]==Variant("Hello mk"))
+{
+    print("equal, response ok");
+}
