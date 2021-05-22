@@ -1,2 +1,0 @@
-auto idx=resolveUri("http://opcfoundation.org/UA/")
-print(idx)
