@@ -1,1 +1,1 @@
-print(read(NodeId:new(0, 2255)))
+print(read(NodeId:new(0, 2255)):toString())

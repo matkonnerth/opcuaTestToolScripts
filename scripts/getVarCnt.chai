@@ -1,9 +1,0 @@
-var cnt = 0;
-var increment = fun[cnt](x) 
-{ 
-  cnt = cnt+1;
-}
-
-foreachNode(NodeId(0,85), increment)
-print(cnt);
-
