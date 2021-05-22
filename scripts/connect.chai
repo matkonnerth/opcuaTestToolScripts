@@ -1,0 +1,7 @@
+disconnect();
+for (var i = 0; i < 10; ++i) 
+{ 
+    connect();
+    var val = read(NodeId(0, 2255));
+    disconnect();
+}
