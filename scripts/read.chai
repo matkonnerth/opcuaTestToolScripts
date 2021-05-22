@@ -1,5 +1,7 @@
 for (var i = 0; i < 10; ++i) 
 { 
-    var val = read(NodeId(0, 2255));
-    wait(500);
+    //prints out the namespacearray
+    print(read(NodeId(0, 2255)));
+    //sleep 1ms
+    wait(1);
 }
