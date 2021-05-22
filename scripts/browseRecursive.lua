@@ -1,5 +1,5 @@
 function printFn(x)
-    print(x.Name().Name())
+    print(x:Name())
 end
 
 function readFn(x)
@@ -8,6 +8,5 @@ function readFn(x)
     end
 end
 
-foreachNode(NodeId(0, 85), printFun);
-foreachNode(NodeId(0, 87), readFun);
-
+foreachNode(NodeId:new(0, 85), printFn);
+foreachNode(NodeId:new(0, 87), readFn);
