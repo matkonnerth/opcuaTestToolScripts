@@ -7,9 +7,12 @@ function try(f, catch_f)
 end
 try(function()
     -- Try block
-    val = read(NodeId.new(1, 1))
+    val = read(NodeId:new(1, 1))
 end, function(e)
     -- Except block
     print("error reading value")
 end)
 print("after try catch")
+
+-- this one fails the the test run
+val = read(NodeId:new(1, 1))
