@@ -13,5 +13,10 @@
         "name": "unified",
         "host": "localhost",
         "port": 48010
+    },
+    {
+        "name": "robot",
+        "host": "10.11.65.193",
+        "port": 4840
     }
 ]
