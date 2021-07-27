@@ -13,5 +13,15 @@
         "name": "unified",
         "host": "localhost",
         "port": 48010
+    },
+    {
+        "name": "robot",
+        "host": "10.11.65.193",
+        "port": 4840
+    },
+    {
+        "name": "agg",
+        "host": "10.11.64.146",
+        "port": 4842
     }
 ]
